@@ -1,26 +1,30 @@
 /* universal selector */
-*{
- color: red;
+* {
+    /* color: red; */
 
- /* margin */
- /* padding */
+    margin: 0;
+    padding: 0;
 }
+
 /* tag seleector/element selector */
-h1{
+h1 {
     color: blue;
     text-align: center;
 }
+
 /* attribute selector */
-a[title="google"]{
+a[title="google"] {
     color: green;
 }
+
 /* id selector */
-#idselector{
+#idselector {
     color: blue;
-    
+
 }
+
 /* class selector */
-.classselector{
+.classselector {
     color: brown;
     text-transform: capitalize;
     font-size: 20px;
@@ -30,40 +34,153 @@ a[title="google"]{
 
 
 /* Descendant selector */
- .desc a{
+.desc a {
     color: rgb(15, 130, 138);
 }
 
 /* child Selector */
-.child>a{
+.child>a {
     color: red;
 }
 
 
 /* Pseudo */
-a:link{
+a:link {
     color: red;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: green;
     letter-spacing: 10px;
 }
 
-a:active{
+a:active {
     color: blue;
     font-size: 20px;
 }
 
-a:visited{
+a:visited {
     color: purple;
 }
 
 /* target */
-div:target{
+div:target {
     color: red;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+/* Border */
+
+.borderone {
+    border: 2px double green;
+
+    /* size style color */
+}
+
+.bordertwo {
+    border-bottom: 5px solid red;
+}
+
+/* border width */
+.borderthree {
+    border-style: solid;
+    /* border-width: 10px; */
+    /* T / R / B / L */
+    /* border-width: 5px 50px; */
+    /* T&B / L&R */
+    /* border-width: 5px 10px 50px; */
+    /* T / L&R / B */
+    border-width: 5px 10px 15px 20px;
+    /* T / R / B / L */
+}
+
+/* border style */
+.border4 {
+    /* border-style: solid; */
+    /* border-style: dotted solid; */
+    /* border-style: dotted dashed solid; */
+    border-style: dotted dashed solid double;
+    border-width: 5px;
+    border-color: green yellow red blue;
+}
+
+/* Margin */
+
+.marginone {
+    border: 2px solid red;
+    /* margin: 50px 0px 0px 0px; */
+
+    margin-top: 50px;
+}
+
+/* padding */
+.paddingone {
+    border: 2px solid red;
+    padding: 50px;
+
+    padding-top: 50px;
+}
+
+/* Inline Layout */
+
+.inline {
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+
+.block {
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
+}
+
+/* float */
+
+
+.float1 {
+    width: 50%;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.float2 {
+    width: 50%;
+    float: left;
+}
+
+
+/* ---- Flex ---- */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* top button */
+    justify-content: center;
+    height: 100px;
+    background-color: red;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: auto auto auto; */
+    color: #FFFFFF;
+    /* grid-row-gap: 40px; */
+    /* grid-column-gap: 30px; */
+    grid-gap: 30px;
+}
+
+.grid_child {
+    padding: 20px;
+    text-align: center;
 }
